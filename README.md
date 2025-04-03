@@ -59,7 +59,7 @@
 
 ####      5.2.Compile workspace:  
     Open the terminal in your workspace/enter your workspace in the terminal, let the terminal be in the workspace level, then execute the command: 
-            catkin build
+            catkin_make
             
 ####      5.3.Setting temporary environment variables:
     Execute the command in the terminal where you want to run the program:  
