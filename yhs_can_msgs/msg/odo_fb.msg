@@ -1,2 +1,0 @@
-float32  odo_fb_accumulative_mileage
-float32  odo_fb_accumulative_angular
