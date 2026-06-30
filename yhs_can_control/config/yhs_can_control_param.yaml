@@ -1,0 +1,48 @@
+#底盘控制节点参数
+yhs_can_control:
+  # 里程计坐标系名称
+  odom_frame: odom
+  
+  # 机器人底盘坐标系名称
+  base_link_frame: base_link
+  
+  # CAN 接口名称
+  if_name: can0
+  
+  # 是否发布里程计tf
+  tfUsed: true
+
+  # 机器人轴距
+  wheel_base: 0.66
+
+  io_cmd:
+    # IO 控制使能开关
+    enable: false
+
+    # 近光灯（暂不可用-预留）
+    lower_beam: false
+
+    # 远光灯（暂不可用-预留）
+    upper_beam: false
+
+    # 转向灯和危险报警闪光灯开关
+    # 0 = 全关
+    # 1 = 开启左转向灯
+    # 2 =开启右转向灯
+    # 3 = 危险报警闪光灯（转向灯优先级高于危险报警闪光灯）
+    turn_lamp: 0
+
+    # 制动灯开关（暂不可用-预留）
+    braking_lamp: false
+
+    # 示廓灯开关（暂不可用-预留）
+    clearance_lamp: false
+
+    # 雾灯开关（暂不可用-预留）
+    fog_lamp: false
+
+    # 扬声器开关（暂不可用-预留）
+    speaker: false
+    
+    # 充电强制上电标志位，充电状态下强制使能该标志位可以控制车辆48V高压上电，车辆恢复行使控制，该标志位使能和充电状态下车辆不能后退
+    discharge: false
